@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+
+ <!-- Internal CSS for styling + responsiveness -->
+ <style>
+ /* General Styles */
+  body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+background-color: #000;  /* Black background */
+color: #fff;             /* White text */
+      line-height: 1.6;
+    }
+
+    /* Header and Navigation */
+    header {
+      background: #111;
+      padding: 10px 20px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      width: 70px;    /* Reduced size */
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      margin: 0 10px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #ffd700;   /* Gold links */
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #1e90ff;  /* DodgerBlue on hover */
+    }
+
+    /* Main Content */
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1, h2, h3 {
+      color: #ffd700;   /* Gold headings */
+    }
+
+    .featured-img {
+      width: 60%;       /* Shrinks on small screens */
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      margin-top: 20px;
+      border-top: 1px solid #333;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .nav-links li {
+        margin: 5px 0;
+      }
+
+      .logo img {
+        width: 60px;
+      }
+
+      .featured-img {
+        width: 90%;   /* Take more space on small screens */
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">
+<img src="images/logo.jpg" alt="Logo">
+</div>
+<ul class="nav-links">
+<li><a href="home.html">Home page</a></li>
+<li><a href="about.html">About us</a></li>
+<li><a href="products.html">Products and services</a></li>
+<li><a href="news.html">News update</a></li>
+<li><a href="contact.html">Contact us</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<h1>Welcome to Kicks of the Past</h1>
+ <h2>Old Vintage Football Shop</h2>
+<p>
+At <b>Kicks of the Past</b>, we celebrate football history through authentic vintage jerseys, 
+classic boots, and rare memorabilia. Our shop is the perfect place for fans and collectors 
+who want to relive the golden days of the beautiful game.
+</p>
+
+ <h3>Featured Products</h3>
+<ul>
+<li>Retro football jerseys from legendary clubs</li>
+</ul>
+<img src="images/logo.jpg" alt="Featured Product" class="featured-img">
+</main>
+
+<footer>
+<p>&copy; ST10479464 | Kicks of the Past</p>
+</footer>
+
+</body>
+</html>

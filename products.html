@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products and Services</title>
+<style>
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: white;
+}
+
+header {
+  background-color: #111;
+  padding: 10px;
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* Banner Images */
+.banner-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.banner-images img {
+  width: 48%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  line-height: 1.6;
+}
+
+main h1, main h2, main h3 {
+  color: #ffcc00;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #222;
+    border-radius: 5px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .banner-images img {
+    width: 100%;
+  }
+
+  main {
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">
+<img src="images/logo.jpg" alt="Kicks of the Past Logo">
+</div>
+<button class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+<ul class="nav-links">
+<li><a href="home.html">Home page</a></li>
+<li><a href="about.html">About us</a></li>
+<li><a href="products.html" class="active">Products and services</a></li>
+<li><a href="news.html">News update</a></li>
+<li><a href="contact.html">Contact us</a></li>
+</ul>
+</nav>
+
+<section class="banner-images">
+<img src="images/4.png" alt="Vintage football jersey collection">
+<img src="images/2.png" alt="Classic football boots">
+<img src="images/3.png" alt="Football poster collection">
+<img src="images/1.png" alt="Signed football jersey">
+</section>
+</header>
+
+<main>
+<h1>Our Products and Services</h1>
+
+<h2>Vintage Football Collection</h2>
+<p>
+At <b>Kicks of the Past</b>, we bring you the finest vintage football items.  
+Explore our exclusive collection of rare jerseys, boots, and memorabilia that capture the spirit of football history.
+</p>
+
+<h3>Our Products</h3>
+<ul>
+<li>Authentic retro football jerseys from legendary clubs and national teams</li>
+<li>Classic football boots worn by icons of the game</li>
+<li>Rare match programs, posters, and collectibles</li>
+<li>Signed memorabilia from football legends</li>
+</ul>
+
+  <h3>Our Services</h3>
+  <ul>
+<li>Worldwide shipping for all football memorabilia</li>
+<li>Custom framing for jerseys and collectibles</li>
+<li>Authenticity verification for rare items</li>
+<li>Collector-to-collector exchange platform</li>
+</ul>
+</main>
+
+<footer>
+<p>&copy; ST10479464 | Kicks of the Past</p>
+</footer>
+
+<script>
+// Toggle menu for mobile
+const toggleButton = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+toggleButton.addEventListener('click', () => {
+navLinks.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
